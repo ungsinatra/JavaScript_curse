@@ -145,11 +145,27 @@ for (let i = 0; i < 2; i++) {
     const
         qw1 = prompt("последний фильм?", ""),
         qw2 = prompt("На сколько вы его оцените?", "");
+    if (qw1 != null && qw1 != null && qw1.length < 50) {
+        console.log("done");
+        personalMovieDB.movie[qw1] = qw2;
 
-    personalMovieDB.movie[qw1] = qw2;
-
+    }
+    else {
+        console.log("error");
+        i--;
+    }
 };
+if (numberOfFilms < 10) {
+    alert("Просмотренно мало фильмов!");
 
+} else if (numberOfFilms <= 30) {
+    alert("Вы классической зритель!");
+
+} else if (numberOfFilms > 30) {
+    alert("Вы киноман!");
+} else {
+    alert("Произошла ошибка!");
+};
 
 
 console.log(personalMovieDB);
