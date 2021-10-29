@@ -86,3 +86,39 @@ switch (number) {
     default: console.log("Не в этот раз!");
         break;
 }
+
+// 14 циклы 
+// while 
+
+let num = 1;
+while (num < 1000) {
+    console.log(num);
+    num++;
+}
+
+
+// do while 
+
+
+do {
+    console.log(num);
+    num++;
+
+}
+
+while (num <= 50);
+
+for (let i = 0; i < 10; i++) {
+    if (i === 6) { // условаие если i будет строго равно 5,остановиться! 
+        //    break;
+
+        continue; // оператор пропускает шаг который задан в условий и не прерывает //
+    }
+
+    console.log(i);
+
+}
+
+
+
+
