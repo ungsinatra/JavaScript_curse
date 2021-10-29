@@ -28,31 +28,31 @@
 
 //
 
-let numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+// let numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
 
 
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movie: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movie: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
 
-const
-    qw1 = prompt("последний фильм?", ""),
-    qw2 = prompt("На сколько вы его оцените?", ""),
-    qw3 = prompt("последний фильм?", ""),
-    qw4 = prompt("последний фильм?", "");
+// const
+//     qw1 = prompt("последний фильм?", ""),
+//     qw2 = prompt("На сколько вы его оцените?", ""),
+//     qw3 = prompt("последний фильм?", ""),
+//     qw4 = prompt("последний фильм?", "");
 
 
-personalMovieDB.movie[qw1] = qw2;
-personalMovieDB.movie[qw3] = qw4;
+// personalMovieDB.movie[qw1] = qw2;
+// personalMovieDB.movie[qw3] = qw4;
 
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
 
 // 13 prac
@@ -74,51 +74,83 @@ console.log(personalMovieDB);
 
 
 
-// switch
-let number = 100;
-switch (number) {
-    case 100: console.log("Верно!");
-        break;
+// // switch
+// let number = 100;
+// switch (number) {
+//     case 100: console.log("Верно!");
+//         break;
 
-    case 60: console.log("Не верно!");
-        break;
+//     case 60: console.log("Не верно!");
+//         break;
 
-    default: console.log("Не в этот раз!");
-        break;
-}
+//     default: console.log("Не в этот раз!");
+//         break;
+// }
 
 // 14 циклы 
 // while 
 
-let num = 1;
-while (num < 1000) {
-    console.log(num);
-    num++;
-}
+// let num = 1;
+// while (num < 1000) {
+//     console.log(num);
+//     num++;
+// }
 
 
-// do while 
+// // do while 
 
 
-do {
-    console.log(num);
-    num++;
+// do {
+//     console.log(num);
+//     num++;
 
-}
+// }
 
-while (num <= 50);
+// while (num <= 50);
 
-for (let i = 0; i < 10; i++) {
-    if (i === 6) { // условаие если i будет строго равно 5,остановиться! 
-        //    break;
+// for (let i = 0; i < 10; i++) {
+//     if (i === 6) { // условаие если i будет строго равно 5,остановиться! 
+//         //    break;
 
-        continue; // оператор пропускает шаг который задан в условий и не прерывает //
-    }
+//         continue; // оператор пропускает шаг который задан в условий и не прерывает 
+//     }
 
-    console.log(i);
+//     console.log(i);
 
-}
+// }
 
 
 
+
+// Практика 15
+
+
+
+
+
+
+let numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movie: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+
+for (let i = 0; i < 2; i++) {
+    const
+        qw1 = prompt("последний фильм?", ""),
+        qw2 = prompt("На сколько вы его оцените?", "");
+
+    personalMovieDB.movie[qw1] = qw2;
+
+};
+
+
+
+console.log(personalMovieDB);
 
