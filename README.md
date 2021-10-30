@@ -1,8 +1,10 @@
 # JavaScript_curse
 road to frontend developer 
-25.10.21 
-29.10.21
-// 11 prac (git)
-// 12 prac
-// 13 prac
-// 14
+15.10.21 
+
+// 11 prac - done 
+// 12 prac - done
+// 13 prac - done
+// 14 prac - done
+// 15 prac - done
+// 16 prac - done

@@ -129,44 +129,70 @@
 
 
 
-let numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+// let numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
 
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movie: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movie: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
 
-for (let i = 0; i < 2; i++) {
-    const
-        qw1 = prompt("последний фильм?", ""),
-        qw2 = prompt("На сколько вы его оцените?", "");
-    if (qw1 != null && qw1 != null && qw1.length < 50) {
-        console.log("done");
-        personalMovieDB.movie[qw1] = qw2;
+// for (let i = 0; i < 2; i++) {
+//     const
+//         qw1 = prompt("последний фильм?", ""),
+//         qw2 = prompt("На сколько вы его оцените?", "");
+//     if (qw1 != null && qw1 != null && qw1.length < 50) {
+//         console.log("done");
+//         personalMovieDB.movie[qw1] = qw2;
 
-    }
-    else {
-        console.log("error");
-        i--;
-    }
-};
-if (numberOfFilms < 10) {
-    alert("Просмотренно мало фильмов!");
+//     }
+//     else {
+//         console.log("error");
+//         i--;
+//     }
+// };
+// if (numberOfFilms < 10) {
+//     alert("Просмотренно мало фильмов!");
 
-} else if (numberOfFilms <= 30) {
-    alert("Вы классической зритель!");
+// } else if (numberOfFilms <= 30) {
+//     alert("Вы классической зритель!");
 
-} else if (numberOfFilms > 30) {
-    alert("Вы киноман!");
-} else {
-    alert("Произошла ошибка!");
-};
+// } else if (numberOfFilms > 30) {
+//     alert("Вы киноман!");
+// } else {
+//     alert("Произошла ошибка!");
+// };
 
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
+// 16 практика ФУНКЦИЙ!! 
+//Функция - это именованный блок кода, который вызывается в нужных местах программы по имени 
+//Другими словами, функция представляет собой подпрограмму, которую можно вызвать из основной программы, причем неоднократно 
+
+
+
+function showFirstMessage (text){  /// FUNCTION DECLARATION
+    console.log(text);             // создаеться до начало выоленнеи скрипта!
+}
+showFirstMessage("hello world!");
+
+
+
+
+let goo = function(int){
+    console.log("sadasdasd"); // FUCNCTION EXPRESSION
+                              // создается только тогада когда скрипт дохолид до него !
+
+}
+goo();
+
+
+
+
+const free = (a, b) => { return a+b}; // стрелочные функций !!!
+                                      // Не имеет своего контекста!(THIS) 
