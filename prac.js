@@ -176,23 +176,48 @@
 
 
 
-function showFirstMessage (text){  /// FUNCTION DECLARATION
-    console.log(text);             // создаеться до начало выоленнеи скрипта!
-}
-showFirstMessage("hello world!");
+// function showFirstMessage (text){  /// FUNCTION DECLARATION
+//     console.log(text);             // создаеться до начало выоленнеи скрипта!
+// }
+// showFirstMessage("hello world!");
 
 
 
 
-let goo = function(int){
-    console.log("sadasdasd"); // FUCNCTION EXPRESSION
-                              // создается только тогада когда скрипт дохолид до него !
+// let goo = function(int){
+//     console.log("sadasdasd"); // FUCNCTION EXPRESSION
+//                               // создается только тогада когда скрипт дохолид до него !
 
-}
-goo();
-
-
+// }
+// goo();
 
 
-const free = (a, b) => { return a+b}; // стрелочные функций !!!
-                                      // Не имеет своего контекста!(THIS) 
+
+
+// const free = (a, b) => { return a+b}; // стрелочные функций !!!
+// Не имеет своего контекста!(THIS)
+
+
+
+//  17 prac Методы и свойства 
+
+let all = "dog";
+console.log(all.toUpperCase());  // метод touPerCase -меняет регистр
+
+
+console.log(all.indexOf("d")); // метод выводит с значение у буквы D, если нет, то -1 по деффолту 
+
+console.log(all.slice(0, 3)); // метод выводит значение задонной в скобках
+
+console.log(all.substr(0, 3)); // метод в котором нужно указать второй аргумент как конец вырезки (0- началао,  2 - столько симфолов будет обрезаться!)
+
+
+
+// Работа с числами! Методы с чилсами !
+
+let cel = 14.1;
+console.log(Math.round(cel)); // метод для округление числа 
+let test = "13.1px";
+console.log(parseInt(test)); // метод который перевод число в другую систему исчисление (ответ : 12- число, а не строка!)
+
+console.log(parseFloat(test)); //  метод который перевод число в друбную систему исчисление!(ответ: 13.1px)
