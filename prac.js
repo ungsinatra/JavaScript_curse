@@ -201,23 +201,123 @@
 
 //  17 prac Методы и свойства 
 
-let all = "dog";
-console.log(all.toUpperCase());  // метод touPerCase -меняет регистр
+// let all = "dog";
+// console.log(all.toUpperCase());  // метод touPerCase -меняет регистр
 
 
-console.log(all.indexOf("d")); // метод выводит с значение у буквы D, если нет, то -1 по деффолту 
+// console.log(all.indexOf("d")); // метод выводит с значение у буквы D, если нет, то -1 по деффолту 
 
-console.log(all.slice(0, 3)); // метод выводит значение задонной в скобках
+// console.log(all.slice(0, 3)); // метод выводит значение задонной в скобках
 
-console.log(all.substr(0, 3)); // метод в котором нужно указать второй аргумент как конец вырезки (0- началао,  2 - столько симфолов будет обрезаться!)
+// console.log(all.substr(0, 3)); // метод в котором нужно указать второй аргумент как конец вырезки (0- началао,  2 - столько симфолов будет обрезаться!)
 
 
 
-// Работа с числами! Методы с чилсами !
+// // Работа с числами! Методы с чилсами !
 
-let cel = 14.1;
-console.log(Math.round(cel)); // метод для округление числа 
-let test = "13.1px";
-console.log(parseInt(test)); // метод который перевод число в другую систему исчисление (ответ : 12- число, а не строка!)
+// let cel = 14.1;
+// console.log(Math.round(cel)); // метод для округление числа 
+// let test = "13.1px";
+// console.log(parseInt(test)); // метод который перевод число в другую систему исчисление (ответ : 12- число, а не строка!)
 
-console.log(parseFloat(test)); //  метод который перевод число в друбную систему исчисление!(ответ: 13.1px)
+// console.log(parseFloat(test)); //  метод который перевод число в друбную систему исчисление!(ответ: 13.1px)
+
+
+
+// 18 prac prac
+
+
+
+
+
+// Практика 15
+
+
+
+
+
+
+let numberOfFilms;
+function start() {
+
+    numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+    while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+    }
+
+}
+// start();
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movie: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+function filmsWatch() {
+    for (let i = 0; i < 2; i++) {
+        const
+            qw1 = prompt("последний фильм?", ""),
+            qw2 = prompt("На сколько вы его оцените?", "");
+        if (qw1 != null && qw1 != null && qw1.length < 50) {
+            console.log("done");
+            personalMovieDB.movie[qw1] = qw2;
+
+        }
+        else {
+            console.log("error");
+            i--;
+        }
+    }
+
+}
+// filmsWatch();
+
+
+function personLevel() {
+    if (numberOfFilms < 10) {
+        alert("Просмотренно мало фильмов!");
+
+    } else if (numberOfFilms <= 30) {
+        alert("Вы классической зритель!");
+
+    } else if (numberOfFilms > 30) {
+        alert("Вы киноман!");
+    } else {
+        alert("Произошла ошибка!");
+    }
+}
+// personLevel();
+
+function showMyDB(hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+    }
+
+
+
+}
+// showMyDB(personalMovieDB.privat);
+
+
+
+function writeYourGeners() {
+
+    let quation;
+    let aws;
+    for (let i = 1; i <= 3; i++) {
+        quation = prompt(`Ваш любимый жанр? ${i}`);
+
+        personalMovieDB.genres[i - 1] = quation;
+        console.log(personalMovieDB);
+    }
+
+
+}
+
+writeYourGeners();
+
+// console.log(personalMovieDB);
+
