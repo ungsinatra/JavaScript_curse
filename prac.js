@@ -237,87 +237,185 @@
 
 
 
-let numberOfFilms;
-function start() {
+// let numberOfFilms;
+// function start() {
 
-    numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
-    while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
-    }
+//     numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+//     while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
+//         numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+//     }
 
-}
-// start();
+// }
+// // start();
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movie: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movie: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-function filmsWatch() {
-    for (let i = 0; i < 2; i++) {
-        const
-            qw1 = prompt("последний фильм?", ""),
-            qw2 = prompt("На сколько вы его оцените?", "");
-        if (qw1 != null && qw1 != null && qw1.length < 50) {
-            console.log("done");
-            personalMovieDB.movie[qw1] = qw2;
+// function filmsWatch() {
+//     for (let i = 0; i < 2; i++) {
+//         const
+//             qw1 = prompt("последний фильм?", ""),
+//             qw2 = prompt("На сколько вы его оцените?", "");
+//         if (qw1 != null && qw1 != null && qw1.length < 50) {
+//             console.log("done");
+//             personalMovieDB.movie[qw1] = qw2;
 
-        }
-        else {
-            console.log("error");
-            i--;
-        }
-    }
+//         }
+//         else {
+//             console.log("error");
+//             i--;
+//         }
+//     }
 
-}
-// filmsWatch();
-
-
-function personLevel() {
-    if (numberOfFilms < 10) {
-        alert("Просмотренно мало фильмов!");
-
-    } else if (numberOfFilms <= 30) {
-        alert("Вы классической зритель!");
-
-    } else if (numberOfFilms > 30) {
-        alert("Вы киноман!");
-    } else {
-        alert("Произошла ошибка!");
-    }
-}
-// personLevel();
-
-function showMyDB(hidden) {
-    if (!hidden) {
-        console.log(personalMovieDB);
-    }
+// }
+// // filmsWatch();
 
 
+// function personLevel() {
+//     if (numberOfFilms < 10) {
+//         alert("Просмотренно мало фильмов!");
 
-}
-// showMyDB(personalMovieDB.privat);
+//     } else if (numberOfFilms <= 30) {
+//         alert("Вы классической зритель!");
+
+//     } else if (numberOfFilms > 30) {
+//         alert("Вы киноман!");
+//     } else {
+//         alert("Произошла ошибка!");
+//     }
+// }
+// // personLevel();
+
+// function showMyDB(hidden) {
+//     if (!hidden) {
+//         console.log(personalMovieDB);
+//     }
 
 
 
-function writeYourGeners() {
-
-    let quation;
-    let aws;
-    for (let i = 1; i <= 3; i++) {
-        quation = prompt(`Ваш любимый жанр? ${i}`);
-
-        personalMovieDB.genres[i - 1] = quation;
-        console.log(personalMovieDB);
-    }
+// }
+// // showMyDB(personalMovieDB.privat);
 
 
-}
 
-writeYourGeners();
+// function writeYourGeners() {
+
+//     let quation;
+//     let aws;
+//     for (let i = 1; i <= 3; i++) {
+//         quation = prompt(`Ваш любимый жанр? ${i}`);
+
+//         personalMovieDB.genres[i - 1] = quation;
+//         console.log(personalMovieDB);
+//     }
+
+
+// }
+
+// writeYourGeners();
 
 // console.log(personalMovieDB);
+
+
+
+
+
+
+// Повторение !! всего что было 
+//   условий!! тернарные операнды 
+
+
+// let qwua = "are u human?";
+
+// if (5 > 10) {
+//     console.log(" u are human!")
+
+
+// } else if (5 > 60) {
+//     console.log(" u are not human!sry");
+
+
+// } else if (5 > 3) {
+//     console.log(" u are animal!");
+// }
+
+
+// let message = (5 > 10) ? "dss" : (5 < 6) ? "yes! alright!" : "no!!!!!!!!!!"; // тернареное условие ! 
+// console.log(message);
+// qwua += message;
+
+
+
+
+// let tru = (1 === "1") ? "true" : "false";
+// console.log(tru);
+
+
+//  (5=="5")? console.log("true"):console.log("false"); /// true потому что при сравнений страка cтоновиться числом и в итоге получаеться 5=5 true; 
+
+
+
+// let mes = (94 > "11" && 58<100)? console.log("true!"):console.log("fasle!");
+
+
+
+
+// let arr = [10, 20, 40, 60];
+// for (let i = 0; i < 5; i++) {
+//     if (arr[i] % 2 == 0) {
+//         arr[i] = arr[i] ** 2;
+
+//     }
+// }
+
+// console.log(arr[0]);
+
+
+
+let arr1 = [1, 2, 3, 4];
+
+for (let i = 0; i < 4; i++) {
+    if (arr1[i] == 1) {
+        console.log("0001");
+    } else if (arr1[i] == 2) {
+        console.log("0010");
+
+    } else if (arr1[i] == 3) {
+        console.log("0011");
+
+
+    } else if (arr1[i] == 4) {
+
+        console.log("0100");
+    }
+
+
+}
+
+
+let sum;
+let del;
+let mult;
+let subt;
+
+function calc(a, b) {
+
+    sum = console.log(a + b);
+    del = console.log(a - b);
+    mult = console.log(a * b);
+    subt = console.log(a % b);
+    return;
+
+
+}
+calc(5, 3);
+
+
+
+
 
