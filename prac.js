@@ -241,12 +241,12 @@
 // function start() {
 
 //     numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
-//     while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
+//     while (nuOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
 //         numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
 //     }
 
 // }
-// // start();
+// start();
 
 // const personalMovieDB = {
 //     count: numberOfFilms,
@@ -273,7 +273,7 @@
 //     }
 
 // }
-// // filmsWatch();
+// filmsWatch();
 
 
 // function personLevel() {
@@ -289,7 +289,7 @@
 //         alert("Произошла ошибка!");
 //     }
 // }
-// // personLevel();
+// personLevel();
 
 // function showMyDB(hidden) {
 //     if (!hidden) {
@@ -299,7 +299,7 @@
 
 
 // }
-// // showMyDB(personalMovieDB.privat);
+// showMyDB(personalMovieDB.privat);
 
 
 
@@ -377,45 +377,43 @@
 
 
 
-let arr1 = [1, 2, 3, 4];
+// let arr1 = [1, 2, 3, 4];
 
-for (let i = 0; i < 4; i++) {
-    if (arr1[i] == 1) {
-        console.log("0001");
-    } else if (arr1[i] == 2) {
-        console.log("0010");
+// for (let i = 0; i < 4; i++) {
+//     if (arr1[i] == 1) {
+//         console.log("0001");
+//     } else if (arr1[i] == 2) {
+//         console.log("0010");
 
-    } else if (arr1[i] == 3) {
-        console.log("0011");
-
-
-    } else if (arr1[i] == 4) {
-
-        console.log("0100");
-    }
+//     } else if (arr1[i] == 3) {
+//         console.log("0011");
 
 
-}
+//     } else if (arr1[i] == 4) {
+
+//         console.log("0100");
+//     }
 
 
-let sum;
-let del;
-let mult;
-let subt;
-
-function calc(a, b) {
-
-    sum = console.log(a + b);
-    del = console.log(a - b);
-    mult = console.log(a * b);
-    subt = console.log(a % b);
-    return;
-
-
-}
-calc(5, 3);
+// }
 
 
 
 
 
+
+
+
+// let res;
+// let numberOfFilms;
+// function start() {
+
+//     numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+//     while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
+//         numberOfFilms = +prompt("сколько фильмов вы посморели?", "");
+//     }
+//     res = numberOfFilms;
+//     console.log(typeof (res));
+
+// }
+// start();
