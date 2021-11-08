@@ -417,3 +417,60 @@
 
 // }
 // start();
+
+
+
+// ОБьекты в js 
+
+
+
+const options = {
+
+
+    name: "sardor",
+    width: 1920,
+    height: 1080,
+    colors: {
+        border: "black",
+        backGround: "red"
+    
+
+    },
+
+    test :function(){ // функций которые внутри обьектов называються методами
+
+        console.log("test");
+    }
+
+};
+
+
+const {border, backGround} = options.colors; // Деструкторизация обьектов что б можно было обращаться быстрее к ним!
+//  мы просто берем из обьекта свойство и вытаскиваем их как коробки !
+console.log(border);
+
+options.test();
+console.log(Object.keys(options).length); // Object.keys - сделает обьект сторокой и следовательно можно получить его количесвто
+
+// delete options.name; удаляет свойсто из обьектов! DELETE 
+// console.log(options);
+
+
+// Перебор в внуртри обьекта for in !
+
+let counter = 0;
+for (let key in options) {
+
+    if (typeof (options[key]) === "object") {
+        for (let x in options[key]) {
+            console.log(`Свойство ${x} имеет ${options[key][x]}`);
+            counter++;
+        }
+
+    } else {
+        console.log(`Свойство ${key} имеет ${options[key]}`);
+        counter++;
+    }
+}
+console.log(counter);
+
