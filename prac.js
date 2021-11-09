@@ -433,11 +433,11 @@ const options = {
     colors: {
         border: "black",
         backGround: "red"
-    
+
 
     },
 
-    test :function(){ // функций которые внутри обьектов называються методами
+    test: function () { // функций которые внутри обьектов называються методами
 
         console.log("test");
     }
@@ -445,12 +445,12 @@ const options = {
 };
 
 
-const {border, backGround} = options.colors; // Деструкторизация обьектов что б можно было обращаться быстрее к ним!
-//  мы просто берем из обьекта свойство и вытаскиваем их как коробки !
-console.log(border);
+// const {border, backGround} = options.colors; // Деструкторизация обьектов что б можно было обращаться быстрее к ним!
+// //  мы просто берем из обьекта свойство и вытаскиваем их как коробки !
+// console.log(border);
 
-options.test();
-console.log(Object.keys(options).length); // Object.keys - сделает обьект сторокой и следовательно можно получить его количесвто
+// options.test();
+// console.log(Object.keys(options).length); // Object.keys - сделает обьект сторокой и следовательно можно получить его количесвто
 
 // delete options.name; удаляет свойсто из обьектов! DELETE 
 // console.log(options);
@@ -458,19 +458,60 @@ console.log(Object.keys(options).length); // Object.keys - сделает обь
 
 // Перебор в внуртри обьекта for in !
 
-let counter = 0;
-for (let key in options) {
+// let counter = 0;
+// for (let key in options) {
 
-    if (typeof (options[key]) === "object") {
-        for (let x in options[key]) {
-            console.log(`Свойство ${x} имеет ${options[key][x]}`);
-            counter++;
-        }
+//     if (typeof (options[key]) === "object") {
+//         for (let x in options[key]) {
+//             console.log(`Свойство ${x} имеет ${options[key][x]}`);
+//             counter++;
+//         }
 
-    } else {
-        console.log(`Свойство ${key} имеет ${options[key]}`);
-        counter++;
-    }
+//     } else {
+//         console.log(`Свойство ${key} имеет ${options[key]}`);
+//         counter++;
+//     }
+// }
+// console.log(counter);
+
+
+
+// методы и свойство моссивов и псевдамоссивы
+
+
+let arr  = [1, 2, 3, 4, 5];
+
+
+// arr.pop();//  метод котоый удаляет  ласт элемент массива !
+
+
+arr.push(20);// добовляет элемент в конец массива!
+// console.log(arr);
+
+// for (let value of arr){
+//     console.log(value);
+
+// }// цикл for of работает только с моссиво подобными 
+
+// 
+
+arr.forEach(function (item, i, arr) {
+    console.log(`${item}: ${i}: внутри массива ${arr}`);
+});
+
+
+let sss = prompt("", "");
+let xxx = sss.split(",");
+xxx.sort();
+console.log(xxx.join("; "));
+
+// для сортировки числа используют колбэк функцию !
+
+arr.sort(spt);
+
+
+function spt(a, b) {
+
+    return a - b;
 }
-console.log(counter);
-
+console.log(arr);  
