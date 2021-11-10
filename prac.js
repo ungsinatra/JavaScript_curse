@@ -503,7 +503,7 @@ arr.forEach(function (item, i, arr) {
 let sss = prompt("", "");
 let xxx = sss.split(",");
 xxx.sort();
-console .log(xxx.join("; "));
+console.log(xxx.join("; "));
 
 // для сортировки числа используют колбэк функцию !
 
@@ -601,5 +601,28 @@ let mas = ["sadas", "asdasd", "asdasda", "asdasda"];
 
 let mas2 = [...mas];//работает так же как и в обьектах !
 console.log(mas2);
+
+const human = {
+    health: "100hp",
+    gun: "AK-47",
+    secondGun: "usp-s"
+
+
+};
+
+
+
+
+// const alex = Object.create(human);/// прототипирование обьекта 1 вариант 
+
+
+const stive = {
+    health: "50hp",
+    gun: "M41S"
+
+};
+console.log(stive.secondGun);
+
+Object.setPrototypeOf(stive, human);//протатипирование обьекта варинат 2
 
 
