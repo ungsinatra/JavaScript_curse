@@ -503,7 +503,7 @@ arr.forEach(function (item, i, arr) {
 let sss = prompt("", "");
 let xxx = sss.split(",");
 xxx.sort();
-console.log(xxx.join("; "));
+console .log(xxx.join("; "));
 
 // для сортировки числа используют колбэк функцию !
 

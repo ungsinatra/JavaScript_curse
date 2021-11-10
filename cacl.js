@@ -3,7 +3,7 @@ let x = +prompt("Введите первое значение!", ""),
     y = +prompt("Введите второе значение!", ""),
     z = prompt("+, -, /, *", ""),
     result = 0;
-function check() {
+function check(reverse) {
 
     while (x == null || x == "" || isNaN(x)) {
 
@@ -19,10 +19,10 @@ function check() {
         z = prompt("+, -, /, *", "");
     }
 
-
+    reverse();
 }
 
-check();
+check(clac);
 
 
 function clac() {
@@ -44,4 +44,3 @@ function clac() {
 
     console.log(result);
 }
-clac();
