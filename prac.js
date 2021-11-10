@@ -479,7 +479,7 @@ const options = {
 // методы и свойство моссивов и псевдамоссивы
 
 
-let arr  = [1, 2, 3, 4, 5];
+let arr = [1, 2, 3, 4, 5];
 
 
 // arr.pop();//  метод котоый удаляет  ласт элемент массива !
@@ -514,4 +514,92 @@ function spt(a, b) {
 
     return a - b;
 }
-console.log(arr);  
+console.log(arr);
+
+
+
+
+
+function copy(mainObj) {
+
+    let s = {};
+    let i;
+    for (i in mainObj) {
+        s[i] = mainObj[i];
+    }
+    return s;
+
+}
+
+
+let obj = {
+    a: 10,
+    b: 12
+
+
+};
+
+let objCopy = copy(obj);
+objCopy.a = 20;
+
+// console.log(obj);
+// console.log(objCopy);
+
+
+// обьединение обьектов   
+
+let xxxx = {
+    ss: "sadasd",
+    ff: "sadadad",
+    vv: 13
+};
+let x222 = {
+    ss2: "sadasd2",
+    ff2: "sadadad2",
+    vv2: 132
+};
+
+console.log(Object.assign(xxxx, x222));
+
+
+
+
+// Клонирование массиов 
+
+let arr1 = [2, 4, 5, 6, 1];
+let arr2 = arr1.slice();// slice метод который клонирует массив
+
+
+arr2[2] = "asdada";
+console.log(arr2);
+console.log(arr1);
+
+
+// операторы разворота spread
+
+// обьединение обьектов 
+let xxxx2 = {
+    ss: "sadasd",
+    ff: "sadadad",
+    vv: 13
+};
+let x2222 = {
+    ss2: "sadasd2",
+    ff2: "sadadad2",
+    vv2: 132
+};
+
+const n = { ...xxxx2, ...x2222, asdsa: "sada" };//так работает разворот первый обьект и второй обьект 
+console.log(n);
+
+
+
+// обьединие массивов 
+
+
+let mas = ["sadas", "asdasd", "asdasda", "asdasda"];
+
+let mas2 = [...mas];//работает так же как и в обьектах !
+console.log(mas2);
+
+
