@@ -15,3 +15,4 @@ road to frontend developer
 // 21 prac - done
 // 22 prac - done
 // 23 prac - done
+// 24 prac - done
