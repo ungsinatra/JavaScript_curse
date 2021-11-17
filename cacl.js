@@ -21,7 +21,7 @@ function check(reverse) {
 
     reverse();
 }
-
+ 
 check(clac);
 
 
